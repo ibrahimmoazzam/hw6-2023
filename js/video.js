@@ -60,7 +60,7 @@ mute_button.addEventListener("click", function () {
 
 let volume_slider = document.querySelector("#slider");
 volume_slider.addEventListener("input", function () {
-  volume.innerHTML = volume_slider.value;
+  volume.innerHTML = volume_slider.value + "%";
   video.volume = volume_slider.value / 100;
   console.log("The new volume of the video is: " + video.volume);
 });
